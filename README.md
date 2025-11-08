@@ -1,5 +1,5 @@
 # 🧠 Codebase Genius
-**AI-Powered Codebase Repo Analyzer Documentation Generator**
+**AI-Powered Codebase Repo Analyzer & Documentation Generator**
 
 Automatically analyze GitHub repositories and generate comprehensive documentation using multi-agent AI architecture.
 
@@ -64,7 +64,7 @@ Codebase Genius uses a **multi-agent architecture** built with JacLang:
 1. **Clone the repository**
 ```bash
 git clone https://github.com/devMaLoba/GenAI_Codebase-Genius.git
-cd Codebase-Genius
+cd GenAI_Codebase-Genius
 ```
 
 2. **Create virtual environment**
@@ -74,41 +74,36 @@ source venv/bin/activate
 venv\Scripts\activate (On Windows) 
 ```
 
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Install JacLang and its Components(byllm, jac-cloud, etc)**
+3. **Install JacLang, its Components and Dependencies(byllm, jac-cloud, etc)**
 ```bash
 pip install jaseci
 ```
 
-5. **Set up LLM**
+4. **Set up LLM**
 ```bash
 # Set- Up Llama from Hugging face
 huggingface/meta-llama/Llama-3.3-70B-Instruct
 ```
 
-6. **Configure environment variables**
+5. **Configure environment variables**
 ```bash
 cp .env.example .env
 # Edit .env with your settings
 # Export your environment variables
-     export Llama_API_KEY = "hf_"
+  export Llama_API_KEY = "hf_"
 ```
 
 ### Running the Application
 **Terminal 1: Start JAC Server Backend**
 ```bash
-cd Codebase-Genius
+cd GenAI_Codebase-Genius
 source venv/bin/activate
 jac serve main.jac
 ```
 
 **Terminal 2: Start Streamlit Frontend**
 ```bash
-cd Codebase-Genius
+cd CGenAI_Codebase-Genius
 source venv/bin/activate
 jac streamlit app.jac 
 ```
@@ -133,7 +128,10 @@ Codebase-Genius/
 ├── app.py                # Streamlit frontend
 ├── .env                  # Environment configuration
 ├── .env.example          # Example environment file
-└──  README.md            # Readme file 
+├── .gitignore            # Git ignore rules
+├──  README.md            # Readme file 
+└──  LICENSE              # Official MIT License
+
 ```
 
 ## 🧪 Testing
